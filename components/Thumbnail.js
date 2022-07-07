@@ -13,6 +13,7 @@ layout="responsive"
 src={
     `${BASE_URL}${result.backdrop_path || result.poster_path}`|| `${BASE_URL}${result.poster_path}`
 }
+alt={result.title || result.original_name}
 height={1080}
 width={1920}
 />
@@ -30,4 +31,6 @@ width={1920}
   )
 })
 
-export default Thumbnail
+Thumbnail.displayName = 'myapp';
+
+export default Thumbnail;
